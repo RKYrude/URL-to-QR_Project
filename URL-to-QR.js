@@ -5,9 +5,6 @@ import fs from "fs"
 import { dirname } from "path"
 import { fileURLToPath } from "url"
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
@@ -40,27 +37,3 @@ app.post("/generate", (req, res) => {
     fileName: inputfileName,
   });
 });
-
-
-
-
-// Import the functions you need from the SDKs you need
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDjxiYSo7W1jakXJtUs8vQ15pGj_uN0HS8",
-  authDomain: "url-to-qr-1d19b.firebaseapp.com",
-  projectId: "url-to-qr-1d19b",
-  storageBucket: "url-to-qr-1d19b.appspot.com",
-  messagingSenderId: "378109342379",
-  appId: "1:378109342379:web:f8d894a2beafdc3c9dbdee",
-  measurementId: "G-BFJ9B2Q6MD"
-};
-
-// Initialize Firebase
-const fire = initializeApp(firebaseConfig);
-const analytics = getAnalytics(fire);
