@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/URL-to-QR.css">
+    <title>URl to QR</title>
+</head>
+
+<body>
+    <main>
+        <form action="/generate" method="POST">
+
+            <img id="qrDisplay" src="images/QRimg.png" alt="">
+
+            <aside>
+                <h4>Input URL Here</h4>
+                <input name="inputURL" class="inputURL" type="url" placeholder="Enter URL">
+
+                <h4>Enter file name (optional)</h4>
+                <input name="fileName" class="fileName" type="text">
+
+                <div class="but-cont">
+                    <button class="generate" type="submit">GENERATE</button>
+                    <a href="/images/QRimg.png" download=<%= fileName %> class="download">DOWNLOAD</a>
+                </div>
+            </aside>
+        </form>
+    </main>
+
+
+    
+</body>
+
+</html>
