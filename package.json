@@ -5,7 +5,8 @@
   "main": "URL-to-QR.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch URL-to-QR.js"
   },
   "author": "RICKY",
   "license": "ISC",
@@ -16,6 +17,6 @@
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "qr-image": "^3.2.0"
-    
+
   }
 }
